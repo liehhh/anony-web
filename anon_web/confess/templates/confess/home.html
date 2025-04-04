@@ -1,0 +1,14 @@
+{% extends "confess/base.html" %}
+{% block content %}
+<form method="GET" action="{% url 'confess-search_results' %}">
+    <input type="search" id="site-search" name="q">
+    <button type="submit">Search</button>
+</form>
+<h2><a href="{% url 'confess-create' %}">Confess</a></h2>
+    {% for item in items %}
+    <div>
+    <h2><a href="{% url 'confess-story' item.pk %}">{{ item.title }}</a></h2>
+    <h3>{{ item.date_posted }}</h3>
+    </div>
+    {% endfor %}
+{% endblock content %}

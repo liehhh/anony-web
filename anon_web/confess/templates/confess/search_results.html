@@ -1,0 +1,11 @@
+{% extends "confess/base.html" %}
+{% block content %}
+<h3>Search results for {{ query }}</h3>
+{% if posts %}
+    {% for post in posts %}
+        <h3><a href="{% url 'confess-story' post.pk %}">{{ post.title }}</a></h3>
+    {% endfor %}
+{% else %}
+    <h3>No results</h3>
+{% endif %}
+{% endblock content %}
