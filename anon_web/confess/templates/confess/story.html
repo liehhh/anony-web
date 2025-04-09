@@ -1,5 +1,10 @@
 {% extends "confess/base.html" %}
 {% block content %}
-<h2>{{ item.title }} - {{ item.date_posted }}</h2>
-<h3>{{ item.content }}</h3>
+{% load static %}
+<div class="storydiv1">
+    <h2>{{ item.title }} - {{ item.date_posted }}</h2>
+</div>
+<div class="storydiv2">
+    <h3>{{ item.content }}</h3>
+</div>
 {% endblock content %}

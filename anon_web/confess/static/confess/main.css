@@ -1,0 +1,151 @@
+
+body {
+    margin: 0;
+    background-image: url('/static/confess/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.anon-header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+.anon-header {
+   font-weight: bold;
+   font-size: 30px;
+}
+  
+  .search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2d2d2f;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .search-bar input::placeholder {
+    color: #a0a0a0;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .confess {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: rgb(142, 29, 89);
+    transition: background-color 0.2s;
+  }
+  
+  .confess:hover {
+    background-color: #e000ac;
+  }
+  
+a {
+    text-decoration: none;
+    color: rgb(210, 37, 130);
+}
+
+a:visited {
+    color: rgb(142, 29, 89);
+}
+
+a:hover {
+    color: rgb(255, 88, 177);
+}
+
+.HomePosts {
+    background-color: rgba(255, 255, 255, 0.579);
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid #1a1a1b;
+}
+
+.storydiv1 {
+    margin: 20px;
+    background-color: white;
+    color: #a4007e;
+}
+
+.storydiv1 h2 {
+    padding: 12px;
+    border: 2px solid black;
+}
+
+.storydiv2 {
+    margin: 20px;
+    background-color: white;
+}
+
+.storydiv2 h3 {
+    padding: 12px;
+    border: 2px solid black;
+}
+
+.Confess {
+    color: white;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 95%;
+  margin: 25px auto;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+    font-weight: bold;
+    font-size: larger;
+  background-color: rgb(142, 29, 89);
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  width: 6%;
+  padding: 10px;
+  border-radius: 16px;
+  margin-left: 20px;
+}
+
+button:hover {
+    color: #2a001d;
+  background-color: rgb(167, 35, 106);
+}
+
+.searchengine {
+    padding-left: 20px;
+}
+
+.searchengine h3 {
+    color: white;
+}

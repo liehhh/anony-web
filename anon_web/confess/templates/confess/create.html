@@ -1,8 +1,11 @@
 {% extends 'confess/base.html' %}
 {% block content %}
-<form method="post">
+{% load static %}
+<div class="Confess">
+<form class="trying1" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <button id="UploadBTN" type="submit">Submit</button>
 </form>
+</div>
 {% endblock content %}
