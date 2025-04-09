@@ -7,4 +7,28 @@
 <div class="storydiv2">
     <h3>{{ item.content }}</h3>
 </div>
+
+
+<div class="styling-comments">
+<div class="comment">
+    <h2>Comments</h2>
+    {% for comment in comments %}
+    <div class="comment-trying">
+        <h2>by ANON - {{ comment.content }}</h2> <h3><br> <small>{{ comment.date_posted }}</small></h3>
+    </div>
+        <hr>
+    {% empty %}
+        <h2>No comments yet. Be the first to comment!</h2>
+    {% endfor %}
+</div>
+
+<div class="comment-form">
+    <h3>Add a comment</h3>
+    <form class="comment-form-btn" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="big-button" type="submit">Post Comment</button>
+    </form>
+</div>
+</div>
 {% endblock content %}

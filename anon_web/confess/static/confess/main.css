@@ -149,3 +149,41 @@ button:hover {
 .searchengine h3 {
     color: white;
 }
+
+.comment {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.comment-form {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.big-button {
+  font-size: 1.2rem;  
+  padding-right: 100px;
+  border-radius: 12px; 
+  background-color: #a03060;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.styling-comments {
+  background-color: rgb(255, 255, 255, 0.5);
+  margin: 20px;
+  border: 2px solid #000000;
+}
+
+.comment-trying {
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.comment-trying h2 {
+  color: #a4007e;
+}
